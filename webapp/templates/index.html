@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment System</title>
 </head>
 <body>
-    
+    <h1>Payment System Demo</h1>
+
+    <!-- Add your payment form here -->
+    <form id="paymentForm">
+        <!-- Payment details input fields -->
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" placeholder="Card Number" required>
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="CVV" required>
+
+        <button type="button" onclick="submitPayment()">Submit Payment</button>
+    </form>
+
+    <script>
+        // Replace these with your actual credentials and parameters
+
+    </script>
 </body>
 </html>
