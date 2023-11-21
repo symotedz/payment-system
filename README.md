@@ -1,2 +1,2 @@
-# payment system
- payment system
+# PAYMENT SYSTEM
+ Independent module for handling payments
