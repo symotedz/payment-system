@@ -72,6 +72,8 @@ A payment gateway system is a complex ecosystem that facilitates online and offl
 
 1. **User Interface (UI):** This is the customer-facing interface where they initiate payments. It can be a web page, mobile app, or point-of-sale (POS) terminal.
 
+- APIs: Developers can integrate your payment gateway into their applications.
+
 2. **Payment Processing Engine:** This is the core of the system responsible for handling payment requests. It includes:
     * **Payment Form:** Captures customer payment information like card details.
     * **Tokenization:** Converts sensitive data like card numbers into secure tokens for storage and transmission.
