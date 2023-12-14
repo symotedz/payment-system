@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webapp',
     'mpesa',
+    'api',
+    'creditcard',
+    'paypal',
 ]
 
 MIDDLEWARE = [
