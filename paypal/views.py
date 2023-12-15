@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def paypal_index(request):
     return HttpResponse("Hello PayPal Index")
+
+def paypal_payment(request):
+    return render(request, "paypal.html")

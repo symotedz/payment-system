@@ -16,6 +16,9 @@ from . tasks import get_express_payement
 def mpesa_index(request):
     return HttpResponse('hello mpesa')
 
+def mpesa_payment(request):
+    return render(request, "mpesa_payment.html")
+
 
 class ExpressNumber(View):
     def setup(self, request, *args, **kwargs):
