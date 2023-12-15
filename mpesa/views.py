@@ -10,8 +10,11 @@ from django.http import JsonResponse
 
 from webapp.models import MpesaExpress, ApiResponses, LipaNaMpesa
 from . forms import ExpressNumberForm
-from . transactions import MpesaExpress
+from . transactions import mpesa_express
 from . tasks import get_express_payement
+
+def mpesa_index(request):
+    return HttpResponse('hello mpesa')
 
 
 class ExpressNumber(View):
