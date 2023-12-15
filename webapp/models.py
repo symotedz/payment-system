@@ -26,3 +26,8 @@ class LipaNaMpesa(models.Model):
     phone = models.PositiveIntegerField(verbose_name = "mobile phone number")
     first_name = models.CharField(max_length=255, verbose_name="First Name")
     time_stamp = models.DateTimeField(auto_now_add=True)
+
+class UserProfile(models.Model):
+    username = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=100)

@@ -18,10 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('', include('webapp.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('credit_card/', include('creditcard.urls')),
     path('mpesa/', include('mpesa.urls')),
     path('paypal/', include('paypal.urls')),
-    path('webapp/', include('webapp.urls')),
 ]
