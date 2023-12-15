@@ -14,7 +14,7 @@ class MpesaExpressForm(forms.ModelForm):
 
 class RegistrationForm(forms.ModelForm):
     class Meta:
-        models = UserProfile
+        model = UserProfile
         fields = ['username', 'email', 'password']
         widgets = {
             'password': forms.PasswordInput(),
