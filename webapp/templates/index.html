@@ -51,6 +51,9 @@
 </head>
 <body>
     <h3 class="topper">Symotedz Payment Options</h3>
+{% for user in users %}
+<h4>welcome {{ user.username }}</h4>
+{% endfor %}
     <p class="lower">Kindly Select one of the Payment Method</p>
     <div class="card">
         <h2>Mpesa</h2>

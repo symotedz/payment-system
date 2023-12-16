@@ -31,3 +31,8 @@ class UserProfile(models.Model):
     username = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=100)
+
+class CardDetails(models.Model):
+    card_number = models.BigIntegerField()
+    expirely_date = models.DateField()
+    CVV = models.CharField(max_length=255)

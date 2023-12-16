@@ -46,16 +46,31 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        .topper{
+            position: absolute;
+            top: 5%;
+            color: #4caf50;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
+    <div class="topper">
+        <h1>Symotedz Payment System</h1>
+ 
+    </div>
     <form method="post">
+        <h5>Login to your account</h5>
         {% csrf_token %}
         <label for="id_username">Username:</label>
         <input type="text" name="username" id="id_username" required>
         <label for="id_password">Password:</label>
         <input type="password" name="password" id="id_password" required>
         <button type="submit">Login</button>
+        <p>Don't have an account?go to<a href="{% url 'register' %}">Register</a></p>
     </form>
 </body>
 </html>
