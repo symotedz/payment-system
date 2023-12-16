@@ -58,9 +58,18 @@
         #paypal-button-container .paypal-button:hover {
             background-color: #001f55;
         }
+
+        .topper{
+            position: absolute;
+            top: 5%;
+            justify-content: center;
+            text-transform: capitalize;
+            color: #001f55;
+        }
     </style>
 </head>
 <body>
+    <div><h1 class="topper">PayPal Payment Form</h1></div>
     <form method="post">
         {% csrf_token %}
         <label for="amount">Amount:</label>
