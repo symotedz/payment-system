@@ -47,14 +47,21 @@
             text-decoration: none;
             border-radius: 4px;
         }
+
+        .greetings{
+            position: absolute;
+            top: 10%;
+        }
     </style>
 </head>
 <body>
+
     <h3 class="topper">Symotedz Payment Options</h3>
-{% for user in users %}
-<h4>welcome {{ user.username }}</h4>
-{% endfor %}
-    <p class="lower">Kindly Select one of the Payment Method</p>
+    {% for user in users %}
+    <h4 class="greetings">welcome {{ user.username }}</h4>
+    {% endfor %}
+        <p class="lower">Kindly Select one of the Payment Method</p>
+
     <div class="card">
         <h2>Mpesa</h2>
         <p>Choose Mpesa as your payment method.</p>
@@ -64,13 +71,13 @@
     <div class="card">
         <h2>PayPal</h2>
         <p>Choose PayPal as your payment method.</p>
-        <a href="{% url 'paypal' %}">Select PayPal</a>
+        <a href="{% url 'paypal_payment' %}">Select PayPal</a>
     </div>
 
     <div class="card">
         <h2>Credit Card</h2>
         <p>Choose Credit Card as your payment method.</p>
-        <a href="{% url 'credit_card' %}">Select Credit Card</a>
+        <a href="{% url 'credit_card_payment' %}">Select Credit Card</a>
     </div>
 </body>
 </html>

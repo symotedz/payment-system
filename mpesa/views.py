@@ -13,8 +13,7 @@ from . forms import ExpressNumberForm
 from . transactions import mpesa_express
 from . tasks import get_express_payement
 
-def mpesa_index(request):
-    return HttpResponse('hello mpesa')
+
 
 def mpesa_payment(request):
     return render(request, "mpesa_payment.html")

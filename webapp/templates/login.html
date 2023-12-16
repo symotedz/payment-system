@@ -62,7 +62,7 @@
         <h1>Symotedz Payment System</h1>
  
     </div>
-    <form method="post">
+    <form method="post" action="{% url 'webapp_index' %}">
         <h5>Login to your account</h5>
         {% csrf_token %}
         <label for="id_username">Username:</label>

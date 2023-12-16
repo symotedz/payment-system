@@ -1,6 +1,6 @@
 from django import forms 
 from .models import LipaNaMpesa, MpesaExpress 
-from . models import  UserProfile
+from . models import  UserProfile, CardDetails
 
 class LipaNaMpesaForm(forms.ModelForm):
     class Meta:
@@ -23,3 +23,8 @@ class RegistrationForm(forms.ModelForm):
 class LoginForm(forms.Form):
     username =forms.CharField(max_length=255)
     password = forms.CharField(max_length=255)
+
+class CardDetailsForm(forms.ModelForm):
+    class Meta:
+        model = CardDetails
+        fields = '__all__'
