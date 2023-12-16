@@ -1,11 +1,11 @@
-<!-- registration/templates/registration/register.html -->
+<!-- registration/templates/registration/login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Login</title>
     <style>
         /* Add your styles here */
         body {
@@ -46,24 +46,16 @@
             border-radius: 4px;
             cursor: pointer;
         }
-
-        .topper{
-            position: absolute;
-            top: 5%;
-            color: #4caf50;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-transform: uppercase;
-        }
     </style>
 </head>
 <body>
-    <h2 class="topper">Symotedz Payment System</h2>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
-        <p>Arleady have an account <a href="#">login</a></p>
+        <label for="id_username">Username:</label>
+        <input type="text" name="username" id="id_username" required>
+        <label for="id_password">Password:</label>
+        <input type="password" name="password" id="id_password" required>
+        <button type="submit">Login</button>
     </form>
-   
 </body>
 </html>
